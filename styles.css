@@ -1,0 +1,163 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8d1e4;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: inline-block;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 1.2));
+    
+
+}
+
+.header {
+    /* Remova a cor de fundo anterior */
+    background-image: url(./img/650068espelhado.png);
+    /* Adicione o caminho para a imagem repetida e espelhada */
+    background-size: auto;
+    /* Modifique para 'auto' para permitir a repetição da imagem */
+    background-repeat: no-repeat;
+    /* Repete a imagem para preencher o cabeçalho com o efeito de espelhamento */
+    background-position: left top;
+    /* Posiciona a imagem no topo e à esquerda do cabeçalho */
+    text-align: center;
+    padding: 40px 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 1.5);
+}
+
+.title {
+    font-family: "Pacifico", cursive;
+    font-size: 36px;
+    color: #fff;
+    margin-top: 10px;
+}
+.Barbie{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1.5);
+}
+    
+
+.subtitle {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.main {
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #f18ab8;
+    margin-bottom: 20px;
+}
+
+.sinopse-container {
+    flex: 1;
+    max-width: 400px;
+    /* Defina uma largura máxima para a sinopse */
+    margin: 20px;
+    margin-right: 40px;
+    /* Adicione um espaçamento entre a sinopse e a imagem do filme */
+    padding: 20px;
+    /* Adicione espaçamento interno para criar a caixa */
+    background-color: #fff;
+    /* Cor de fundo da caixa */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 10px 20px 12px 4px rgba(8, 8, 8, 0.678);
+}
+
+/* Estilos para a imagem do filme */
+.movie-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.movie-image {
+    flex: 1;
+    text-align: center;
+    margin: 20px 0;
+    max-width: 400px;
+
+}
+
+/* Defina uma largura máxima para a imagem do filme */
+.movie-image img {
+    max-width: 100%;
+    max-height: 600px;
+    border-radius: 10px;
+    box-shadow: 10px 20px 12px 4px rgba(8, 8, 8, 0.678);
+}
+
+
+.sinopse {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cta-section {
+    background-color: #f18ab8;
+    text-align: center;
+    padding: 40px 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cta-title {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.cta-subtitle {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #f18ab8;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 10px 20px 12px 4px rgba(8, 8, 8, 0.678);
+}
+
+.cta-button:hover {
+    background-color: #f8d1e4;
+    color: #fff;
+}
+
+.footer {
+    background-color: #f18ab8;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 865px) {
+    .movie-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sinopse-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
